@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,4 +8,38 @@
 
 html {
   background: lightblue;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+  padding-top: 50px;
+}
+
+.top-nav {
+  background: blue;
+  /* remove this height later on if not needed */
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.landing {
+  background-image: url("../images/background-medium.jpeg");
+  background-size: cover;
+  /* Allows the background to strech itself to fill up the container it is in*/
+  background-position: center;
+  height: calc(100vh - 50px);
+  /* Calc function calculates the difference between the values inside */
+  display: flex;
+  /* Would put all of the children in a row across, but since h1 is the only child, it is the only item being displayed */
+  align-items: center;
+  /* align items by default deals with the vertical axis*/
+  justify-content: center;
+  /* justify content focuses on the horizontal access */
+  color: black;
+  /* Giving this property to the parent, all the children will inherit it */
+  text-align: center;
 }
