@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rozha+One');
+@import url('https://fonts.googleapis.com/css?family=Lato|Rozha+One');
 
 * {
   box-sizing: border-box;
@@ -11,18 +11,53 @@ html {
   font-family: 'Rozha One', serif;
 }
 
-body {
-  padding-top: 50px;
+.top-nav-list {
+  display: flex;
+  padding-top: 10px;
+  list-style: none;
+  justify-content: center;
+}
+
+/*.top-nav-list li {
+  width: 25%;
+}*/
+
+.top-nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  padding-top: 3px;
+  padding-bottom: 7px;
+  padding-left: 35px;
+  padding-right: 35px;
+  /*padding: 5px 35px;*/
+  width: 25%;
+  transition: .3s;
+}
+
+.top-nav-list a:hover {
+  color: #fff;
+  background: #760cb7;
+  border-radius: 6px;
+}
+
+.active-link {
+  color: #d68c24;
 }
 
 .top-nav {
-  background: blue;
+  background: #992970;
   /* remove this height later on if not needed */
   height: 50px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+}
+
+body {
+  padding-top: 50px;
 }
 
 .landing {
@@ -74,6 +109,6 @@ body {
     display: block;
   }
   .col-3 {
-    width: 100%;
+    width: 33.33%;
   }
 }
